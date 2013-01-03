@@ -1,0 +1,60 @@
+<head>
+    <title>Tunisian Sun</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a id="logo" href="/"></a>
+            
+            <div id="login">
+                <a href="#">Регистрация</a><br>
+                <a href="#">Вход</a>
+            </div>
+            
+            <div id="cart">
+                <a href="#">Корзина <span>5 наименований</span></a>
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+
+        <div id="main_menu">
+            <ul id="navigation">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+            
+            <div id="menu_header">
+                <h2>Tunisia — place to be now</h2>
+                
+                <div id="header_serach">
+                    <p>Поиск <input type="search"> <button>Найти</button></p>
+                </div>
+            </div>
+        </div>
+
+        {{renderPage}}
+    
+        <div id="popular_products" class="product_items">
+            <h2>Лидеры продаж <a href="#">Смотреть все продукты</a></h2>
+            
+            {{> item}}
+            {{> item}}
+            {{> item}}
+            {{> item}}
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+
+            <p>TunisianSun.ru &copy; 2013</p>
+        </div>
+    </div>
+</body>
