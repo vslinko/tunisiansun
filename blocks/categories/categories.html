@@ -3,11 +3,9 @@
         <h3>КАТЕГОРИИ:</h3>
 
         <ul>
-            <li><a href="/category">косметика</a></li>
-            <li><a href="/category">косметика</a></li>
-            <li><a href="/category">косметика</a></li>
-            <li><a href="/category">косметика</a></li>
-            <li class="active"><a href="/category">косметика</a></li>
+            {{#each categories}}
+            <li{{active slug}}><a href="/categories/{{slug}}">{{name}}</a></li>
+            {{/each}}
         </ul>
     </div>
 </template>

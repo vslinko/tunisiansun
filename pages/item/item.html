@@ -1,0 +1,19 @@
+<template name="itemPage">
+    <div id="page">
+        {{> categories}}
+        
+        {{#with item}}
+        <div id="item_description">
+            <h3>{{name}} <i class="new">NEW!</i></h3>
+
+            <img id="product_image" src="{{image}}" alt="{{name}}">
+            
+            <p id="product_price">{{price}} руб. <a href="#">В корзину</a></p>
+            
+            <div class="clear"></div>
+            
+            <p id="product_description">{{description}}</p>
+        </div>
+        {{/with}}
+    </div>    
+</template>

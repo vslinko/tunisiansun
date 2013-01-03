@@ -1,0 +1,9 @@
+<template name="popularProducts">
+    <div id="popular_products" class="product_items">
+        <h2>Лидеры продаж <a href="#">Смотреть все продукты</a></h2>
+
+        {{#each items}}        
+            {{> item}}
+        {{/each}}
+    </div>
+</template>

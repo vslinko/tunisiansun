@@ -1,0 +1,15 @@
+<template name="categoryPage">
+    <div id="page">
+        {{> categories}}
+
+        <div id="category_products" class="product_items">
+            <h3>{{category.name}}</h3>
+
+            {{#each items}}
+                {{> item}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</template>
