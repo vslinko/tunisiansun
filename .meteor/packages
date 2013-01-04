@@ -1,5 +1,7 @@
 autopublish
+browser-store
 coffeescript
 insecure
 preserve-inputs
 router
+underscore

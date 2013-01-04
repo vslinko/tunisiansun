@@ -8,6 +8,9 @@
     "basePackages": {
       "router": {
         "version": "0.3.4"
+      },
+      "browser-store": {
+        "version": "0.0.2"
       }
     },
     "packages": {
@@ -15,6 +18,11 @@
         "git": "https://github.com/tmeasday/meteor-router.git",
         "tag": "v0.3.4",
         "commit": "8f0d5303de5b93771e91f21f818be27358c2fb30"
+      },
+      "browser-store": {
+        "git": "https://github.com/awwx/meteor-browser-store.git",
+        "tag": "v0.0.2",
+        "commit": "39c6c65bc8f1db621cdc6459f49ed9f137762ef9"
       },
       "page-js": {
         "git": "https://github.com/tmeasday/meteor-page-js.git",
