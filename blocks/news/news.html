@@ -1,0 +1,8 @@
+<template name="news">
+    <h2>НОВОСТИ</h2>
+    
+    {{#each news}}
+    <p><span class="date">{{dateFormat date}}</span>
+        <a href="/news/{{slug}}">{{title}}</a></p>
+    {{/each}}
+</template>

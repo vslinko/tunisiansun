@@ -1,7 +1,13 @@
 Categories = new Meteor.Collection "categories"
 Items = new Meteor.Collection "items"
+News = new Meteor.Collection "news"
 
 if Meteor.isServer
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Itaque rem quos iusto laudantium reprehenderit modi enim at deserunt
+        rerum dolor officiis sit aliquid tempora minima inventore pariatur
+        praesentium qui fugiat."
+
     if Categories.find().count() == 0
         Categories.insert
             slug: "cosmetics"
@@ -9,10 +15,6 @@ if Meteor.isServer
 
     if Items.find().count() == 0
         category = Categories.findOne()
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Itaque rem quos iusto laudantium reprehenderit modi enim at deserunt
-            rerum dolor officiis sit aliquid tempora minima inventore pariatur
-            praesentium qui fugiat."
 
         Items.insert
             slug: "soap"
@@ -67,3 +69,30 @@ if Meteor.isServer
             category: category._id
             description: description
             sold: 5
+
+    if News.find().count() == 0
+        today = new Date
+
+        News.insert
+            slug: "life-in-the-city"
+            title: "Жизнь в мегаполисе"
+            date: today.setDate today.getDate() - 1
+            text: description
+
+        News.insert
+            slug: "take-a-bath"
+            title: "Принимаем ванну"
+            date: today.setDate today.getDate() - 1
+            text: description
+            
+        News.insert
+            slug: "massage-and-self-massage"
+            title: "Массаж и самомассаж"
+            date: today.setDate today.getDate() - 1
+            text: description
+            
+        News.insert
+            slug: "aromatherapy"
+            title: "Ароматерапия"
+            date: today.setDate today.getDate() - 1
+            text: description
